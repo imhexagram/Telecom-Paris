@@ -1,0 +1,1 @@
+curl -X PUT --json '{"key": "8000305","title": "test2","journal": "t","year": "2080","month": "aug","keywords": "test","lang": "en","authors": ["Alice","Bob"],"category": "article","state": "published","dept": "comelec","group": "rfm"}' http://localhost:8000/pubref/8000305

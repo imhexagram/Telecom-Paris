@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Page</title>
+    <script src="test2.js" type="text/javascript"></script>
+</head>
+ 
+<body>
+    <div>
+        <button id="_SHOW" onclick="show()">Show txt</button>
+        <button id="ADD_B" onclick="add()">Add element</button>
+        <button id="REMOVE" onclick="remove()">Remove element</button>
+        <button id="CLEAR" onclick="clear()">Clear</button>
+        <button id="RESTORE" onclick="restore()">Restore</button>
+        <button id="PIEB" onclick=piechart()>show piechart</button>
+        <button id="LOCAL_PIE" onclick=localpiechart()>local pie</button>
+    </div>
+    <div>
+        <input type="number" id="indexTF" placeholder="index"  style="visibility:hidden">
+        <input type="text" id="titleTF" placeholder="title"  style="visibility:hidden">
+        <input type="text" id="colorTF" placeholder="color"  style="visibility:hidden">
+        <input type="number" id="valueTF" placeholder="value" style="visibility:hidden">
+        <button id="SUBMITADD" onclick=submitadd() style="visibility:hidden">Add</button>
+        <button id="VALIDREM" onclick=validrem() style="visibility:hidden">Remove</button>
+    </div>
+    <div id="MAINSHOW"></div>
+    <div id="piediv"></div>
+</body>
+ 
+</html>
