@@ -39,4 +39,4 @@ for i in range(1000):
     if(1 != decrypt(pkB, c, sA)):
         print("erreur 1")
         e1=e1+1
-print("fin. "+"erreur with 0: ",e0,", erreur with 1: ",e1)
+print("fin. "+"erreur avec 0: ",e0,", erreur avec 1: ",e1)
