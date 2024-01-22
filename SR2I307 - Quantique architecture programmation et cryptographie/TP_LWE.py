@@ -55,7 +55,9 @@ def encrypt_multi(mu, pkA):
     return pkB, c
 
 def decrypt_multi(pkB, c, sA):
-    return abs(round((floor(q/2)**-1)*balance_multi(c - (pkB*sA))))
+    nrows, ncols = k, k
+    r = matrix(Zq, nrows, ncols, [[abs(round((floor(q/2)**-1)*balance(c[i][j] - (pkB*sA)[i][j]))) for j in range(ncols)] for i in range(nrows)])
+    return r
 
 e = 0
 k = 10
